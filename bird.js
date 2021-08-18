@@ -8,7 +8,7 @@ function Bird() {
   this.x = 120;
 
   this.gravity = 0.3;
-  this.lift = -8;
+  this.lift = -6;
   this.velocity = 0;
   this.scale = 0.4;
 
