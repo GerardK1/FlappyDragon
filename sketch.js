@@ -31,7 +31,7 @@ function setup() {
    b1 = color(143,153,118);
    b2 = color(255,255,255);
  
-  let cnv = createCanvas(400, 600);
+  let cnv = createCanvas(400, 400);
   cnv.mousePressed(canvasPressed);
   bird = new Bird();
   pipes.push(new Pipe());
@@ -65,7 +65,7 @@ function draw() {
   
   volobj.updatevol();
   var vol = volobj.vol;
-  var y_pos = map(vol, 0, 0.5, 600, 0);
+  var y_pos = map(vol, 0, 0.5, height, 0);
   if (abs(y_last - y_pos) > 3){
     if (y_last - y_pos <  0){
       y_pos = y_last + 3;
