@@ -85,7 +85,7 @@ function draw() {
       flies.splice(i, 1);
     }
     else{
-      flies[i].show(y_pos);
+      flies[i].show(y_pos - 40);
     flies[i].update();
 
     if (flies[i].hits(bird)) {
