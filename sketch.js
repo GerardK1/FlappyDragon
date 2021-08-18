@@ -38,6 +38,7 @@ function setup() {
   plants.push(new Plant());
   flies.push(new fly());
   volobj = new Volumeobj();
+  frameRate(30);
   
   
 }
@@ -58,7 +59,7 @@ function canvasPressed() {
 
 
 function draw() {
-  frameRate(48);
+   
   if(start){
   // Background
   setGradient(0, 0, width, height, b1, b2, Y_AXIS);
@@ -177,7 +178,7 @@ else{
 }
 else{
   // Background
-  frameRate(2);
+ 
   setGradient(0, 0, width, height, b1, b2, Y_AXIS);
   //push();
   //translate(width / 2,height);
