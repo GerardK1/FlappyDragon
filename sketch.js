@@ -31,7 +31,7 @@ function setup() {
    b1 = color(143,153,118);
    b2 = color(255,255,255);
  
-  let cnv = createCanvas(400, 400);
+  let cnv = createCanvas(310, 400);
   cnv.mousePressed(canvasPressed);
   bird = new Bird();
   pipes.push(new Pipe());
@@ -180,7 +180,7 @@ else{
   setGradient(0, 0, width, height, b1, b2, Y_AXIS);
   push();
   translate(200,height);
-  welcome_branch(150);
+  welcome_branch(width / 2);
   pop();
   
 }
