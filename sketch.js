@@ -31,7 +31,7 @@ function setup() {
    b1 = color(143,153,118);
    b2 = color(255,255,255);
  
-  let cnv = createCanvas(600, 600);
+  let cnv = createCanvas(400, 600);
   cnv.mousePressed(canvasPressed);
   bird = new Bird();
   pipes.push(new Pipe());
@@ -85,7 +85,7 @@ function draw() {
       flies.splice(i, 1);
     }
     else{
-      flies[i].show(y_pos - 40);
+      flies[i].show(y_pos - 10);
     flies[i].update();
 
     if (flies[i].hits(bird)) {
@@ -135,9 +135,9 @@ function draw() {
   rect(0, height - 20, width, 20);
   //sun
   fill(255, 165, 0, 50);
-  circle(460, 144, 180);
+  circle(300, 144, 180);
   fill(255, 100, 0, 100);
-  circle(460, 144, 140);
+  circle(300, 144, 140);
 
 
   //create new piples
@@ -179,7 +179,7 @@ else{
   frameRate(2);
   setGradient(0, 0, width, height, b1, b2, Y_AXIS);
   push();
-  translate(300,height);
+  translate(200,height);
   welcome_branch(150);
   pop();
   

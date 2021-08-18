@@ -10,7 +10,7 @@ function fly() {
     this.hits = function(bird) {
   
       //update for head size
-      hit = collidePointCircle(this.x, this.y, bird.x, bird.y, 15);
+      hit = collidePointCircle(this.x, this.y, bird.x, bird.y, 25);
       if(hit) { 
       this.highlight = true;
       return true; 
@@ -23,13 +23,13 @@ function fly() {
 
       this.y = y_pos;
       fill(0);
-      ellipse(this.x , y_pos, 5);
+      ellipse(this.x , y_pos, 8, 4);
       fill(0,62,100,63);
       if (frameCount %4 == 0){
-        triangle(this.x - 5, this.y + 7, this.x, y_pos, this.x , this.y + 5);
+        triangle(this.x - 5, this.y - 8, this.x, y_pos, this.x , this.y - 12);
       }
       else{
-        triangle(this.x, this.y + 7, this.x, y_pos, this.x +5, this.y + 5);
+        triangle(this.x, this.y - 9, this.x, y_pos, this.x +5, this.y - 14);
       }
 
     
