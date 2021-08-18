@@ -5,7 +5,7 @@
 
 var gen_int = 75;
 var plant_gen_int = 400;
-var fly_gen_int = 300;
+var fly_gen_int = 200;
 var frame_counter = 0;
 var plant_frame_counter = 0;
 var fly_frame_counter = 0;
@@ -167,7 +167,7 @@ else{
 
 if (fly_frame_counter == fly_gen_int) {
   flies.push(new fly());
-  fly_int_plant = floor(random(100,200));
+  fly_int_plant = floor(random(50,150));
   fly_frame_counter = 0;
 }
 else{
