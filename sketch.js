@@ -58,7 +58,7 @@ function canvasPressed() {
 
 
 function draw() {
-  frameRate(50);
+  frameRate(48);
   if(start){
   // Background
   setGradient(0, 0, width, height, b1, b2, Y_AXIS);
@@ -66,6 +66,7 @@ function draw() {
   volobj.updatevol();
   var vol = volobj.vol;
   var y_pos = map(vol, 0, 0.5, height, 0);
+  var sun_pulse =map(vol, 0, 0.5, 0, 20);
   if (abs(y_last - y_pos) > 3){
     if (y_last - y_pos <  0){
       y_pos = y_last + 3;
@@ -135,9 +136,9 @@ function draw() {
   rect(0, height - 20, width, 20);
   //sun
   fill(255, 165, 0, 50);
-  circle(160, 144, 120);
+  circle(160, 144, 120 + sun_pulse);
   fill(255, 100, 0, 100);
-  circle(160, 144, 100);
+  circle(160, 144, 100 + sun_pulse);
 
 
   //create new piples
