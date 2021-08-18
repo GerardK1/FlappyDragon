@@ -135,9 +135,9 @@ function draw() {
   rect(0, height - 20, width, 20);
   //sun
   fill(255, 165, 0, 50);
-  circle(300, 144, 180);
+  circle(160, 144, 120);
   fill(255, 100, 0, 100);
-  circle(300, 144, 140);
+  circle(160, 144, 100);
 
 
   //create new piples
