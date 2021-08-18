@@ -4,7 +4,7 @@ function fly() {
     
     this.x = width;
     this.y = 0;
-    this.speed = 2;
+    this.speed = 1.5;
   
   
     this.hits = function(bird) {
