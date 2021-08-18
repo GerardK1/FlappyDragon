@@ -179,8 +179,8 @@ else{
   frameRate(2);
   setGradient(0, 0, width, height, b1, b2, Y_AXIS);
   push();
-  translate(200,height);
-  welcome_branch(width / 2);
+  translate(width / 2,height);
+  welcome_branch(100);
   pop();
   
 }
