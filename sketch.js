@@ -146,7 +146,7 @@ function draw() {
 
   if (frame_counter == gen_int) {
     pipes.push(new Pipe(y_pos * 1.2));
-    gen_int = floor(random(60,130));
+    gen_int = floor(random(60,90));
     frame_counter = 0;
   }
   else{
