@@ -31,7 +31,7 @@ function setup() {
    b1 = color(143,153,118);
    b2 = color(255,255,255);
  
-  let cnv = createCanvas(310, 400);
+  let cnv = createCanvas(300, 400);
   cnv.mousePressed(canvasPressed);
   bird = new Bird();
   pipes.push(new Pipe());
