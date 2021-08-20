@@ -1,6 +1,6 @@
 function Plant(){
 
-this.x = width;
+this.x = width + 100;
 this.stem = random(50,100);
 
 this.speed = 4 * (this.stem /100);
