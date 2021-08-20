@@ -224,18 +224,17 @@ function setGradient(x, y, w, h, c1, c2, axis) {
 function branch(len){
   angle = 0.48
   stroke(23,82,0,100);
-  multiplier = random(1,1.2);
   strokeWeight(len / 10);
   line(0,0,0,-len);
   translate (0,-len);
-  if (len>12){
+  if (len>8){
   push();
-  rotate (angle*multiplier);
-  branch (len*0.67*multiplier);
+  rotate (angle);
+  branch (len*0.67);
   pop();
   push();
-  rotate(-angle*multiplier);
-  branch (len*0.67*multiplier);
+  rotate(-angle);
+  branch (len*0.67);
   pop();
   }
 
